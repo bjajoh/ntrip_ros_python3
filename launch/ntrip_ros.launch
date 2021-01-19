@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="ntrip_ros" type="ntripclient.py" name="ntrip_ros" output="screen">
+ 	 <param name="rtcm_topic" value="/rtcm"/>
+ 	 <param name="ntrip_server" value="dk.nrtk.eu:9301"/>
+ 	 <param name="ntrip_user" value="XXXXXX"/>
+ 	 <param name="ntrip_pass" value="XXXXXX"/>
+ 	 <param name="ntrip_stream" value="MSM_VRS"/>
+ 	 <param name="nmea_gga" value="$GPGGA,193912.090,5701.452,N,00956.683,E,1,12,1.0,0.0,M,0.0,M,,*61"/>  </node>
+</launch>
+
